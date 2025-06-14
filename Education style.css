@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css??family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding-top: 50px;
+    background : #081b29;
+    color: #ededed;
+}
+
+.header {
+    background-color: #0077b6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    width: 70%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    opacity: 0; 
+    animation: enterAnimation 1s ease-in-out forwards; 
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.container img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.left {
+    align-self: flex-start;
+}
+
+.right {
+    align-self: flex-end;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #00abf0;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.footer {
+    background-color: #0077b6;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+.timeline h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #00abf0;
+    animation: enterAnimation 1s ease-in-out forwards; 
+}
+
+@keyframes enterAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
